@@ -1,5 +1,5 @@
 <?php
-$webTitle = 'ChoTreo.Com';
+$webTitle = 'HoangAnhOnline.Com';
 $webDescription = 'Phần mềm quản lý bán hàng online miễn phí';
 $webKeyword = 'mua bán online, phần mềm quản lý, phần mềm quản lý bán hàng online, chotreo, chợ tréo';
 $webImage = $BASE_URL.'/img/chotreo.png';
@@ -32,33 +32,19 @@ $_image = !empty($pageImage) ? $pageImage : $webImage;
         <meta name="twitter:image" content="<?php echo $_image; ?>" />
         <meta itemprop="image" content="<?php echo $_image; ?>" />
 
-        <meta name="generator" content="ChoTreo.Com" />
-        
-        <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-        <link rel='dns-prefetch' href='//s.w.org' />
+        <meta name="generator" content="HoangAnhOnlie.Com" />
         
         <link rel="canonical" href="<?php echo $current_url;?>" />
         
-        <link href="<?php echo $BASE_URL; ?>/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="<?php echo $BASE_URL; ?>/css/skdslider.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link href="<?php echo $BASE_URL; ?>/css/style.css?<?php echo VERSION_DATE; ?>" rel="stylesheet" type="text/css" media="all" />
-        <link href="<?php echo $BASE_URL; ?>/css/responsive.css?<?php echo VERSION_DATE; ?>" rel="stylesheet" type="text/css" media="all" />
-        <!-- font-awesome icons -->
-        <link href="<?php echo $BASE_URL; ?>/css/font-awesome.css" rel="stylesheet"> 
-        <!-- //font-awesome icons -->
-        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="<?php echo $BASE_URL; ?>/js/jquery-1.11.1.min.js"></script>
-        <script src="<?php echo $BASE_URL; ?>/js/common.js?<?php echo VERSION_DATE; ?>"></script>
     </head>
 
-    <body onload="hide_preloader()" id="<?php echo $controller.'-'.$action;?>">
-        <?php echo $this->element('header'); ?>
-        <?php echo $this->element('nav'); ?>
-        <?= $this->fetch('content') ?>
-        <?php echo $this->element('footer'); ?>
-        <?php echo $this->element('popup'); ?>
-        <div class="loader"><span></span></div>
+    <body id="<?php echo $controller.'-'.$action;?>">
+        <?php echo $this->element('header');?>
+        <div class="container">
+            <?= $this->fetch('content') ?>
+        </div>
 
         <script type="text/javascript">
             var BASE_URL = '<?php echo $BASE_URL; ?>';
@@ -69,12 +55,10 @@ $_image = !empty($pageImage) ? $pageImage : $webImage;
             var _csrfToken = '<?php echo $this->request->getParam('_csrfToken'); ?>';
         </script>
         
-        <!-- start-smoth-scrolling -->
-        <script type="text/javascript" src="<?php echo $BASE_URL; ?>/js/move-top.js"></script>
-        <script type="text/javascript" src="<?php echo $BASE_URL; ?>/js/easing.js"></script>
-        <!-- start-smoth-scrolling -->
-        <script src="<?php echo $BASE_URL; ?>/js/bootstrap.min.js"></script>
-        <script src="<?php echo $BASE_URL; ?>/js/skdslider.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="<?php echo $BASE_URL; ?>/js/common.js?<?php echo VERSION_DATE; ?>"></script>
         
     </body>
 </html>
