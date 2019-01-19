@@ -6,7 +6,7 @@
 use Cake\Core\Configure;
 
 Configure::write('API.Timeout', 60);
-Configure::write('API.secretKey', 'chotreolethuy');
+Configure::write('API.secretKey', 'hoanganhonline.com');
 
 Configure::write('API.url_settings_getfrontdata', 'settings/getfrontdata');
 Configure::write('API.url_settings_gethomedata', 'settings/gethomedata');
@@ -28,3 +28,5 @@ Configure::write('API.url_customers_addupdate', 'customers/addupdate');
 Configure::write('API.url_orders_addupdate', 'orders/addupdate');
 
 Configure::write('API.url_admins_getdetailforfront', 'admins/getdetailforfront');
+
+Configure::write('API.url_fbaccounts_getuidfromurl', 'fbaccounts/getuidfromurl');

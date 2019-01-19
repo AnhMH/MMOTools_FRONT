@@ -37,3 +37,7 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+.customForm .form-control {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

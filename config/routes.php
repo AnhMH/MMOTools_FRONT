@@ -53,21 +53,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
     $routes->connect('/', ['controller' => 'Home', 'action' => 'index']);
-    $routes->connect('/san-pham/*', ['controller' => 'Products', 'action' => 'detail']);
-    $routes->connect('/danh-muc/*', ['controller' => 'Cates', 'action' => 'detail']);
-    $routes->connect('/tim-kiem/*', ['controller' => 'Products', 'action' => 'search']);
-    $routes->connect('/lien-he', ['controller' => 'Contact', 'action' => 'index']);
-    $routes->connect('/dang-nhap', ['controller' => 'Customers', 'action' => 'login']);
-    $routes->connect('/dang-ky', ['controller' => 'Customers', 'action' => 'register']);
-    $routes->connect('/dang-xuat', ['controller' => 'Customers', 'action' => 'logout']);
-    $routes->connect('/gio-hang', ['controller' => 'Cart', 'action' => 'index']);
-    $routes->connect('/dat-hang', ['controller' => 'Cart', 'action' => 'checkout']);
-    $routes->connect('/dat-hang-thanh-cong', ['controller' => 'Cart', 'action' => 'complete']);
-    $routes->connect('/cua-hang/*', ['controller' => 'Shops', 'action' => 'detail']);
-    $routes->connect('/hang-khuyen-mai/', ['controller' => 'Coupons', 'action' => 'index']);
-    $routes->connect('/noi-dung-khuyen-mai/*', ['controller' => 'Coupons', 'action' => 'detail']);
-    $routes->connect('/dieu-khoan-dich-vu', ['controller' => 'Home', 'action' => 'policy']);
-    $routes->connect('/chinh-sach-bao-mat', ['controller' => 'Home', 'action' => 'policy2']);
+    $routes->connect('getprofileid/', ['controller' => 'Fb', 'action' => 'getprofileid']);
 
     /**
      * Connect catchall routes for all controllers.

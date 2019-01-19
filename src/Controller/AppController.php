@@ -119,7 +119,7 @@ class AppController extends Controller
         if (isset($this->Auth) && $this->isAuthorized()) {
             $this->set('AppUI', $this->Auth->user());
         }
-        $settings = $this->getSettings();
+        $settings = array();
         $session = $session = $this->getRequest()->getSession();
         $cart = array();
         $sessionKey = Configure::read('Config.cartSessionKey');
