@@ -53,7 +53,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
     $routes->connect('/', ['controller' => 'Home', 'action' => 'index']);
-    $routes->connect('getprofileid/', ['controller' => 'Fb', 'action' => 'getprofileid']);
+    $routes->connect('/getprofileid/', ['controller' => 'Fb', 'action' => 'getprofileid']);
 
     /**
      * Connect catchall routes for all controllers.
